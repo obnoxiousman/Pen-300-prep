@@ -1,0 +1,103 @@
+{
+  "main": {
+    "id": "ea503982989d7131",
+    "type": "split",
+    "children": [
+      {
+        "id": "9552042e7867964e",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Commands/MSFvenom payload generation.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "04e11c0ef4ce19d2",
+    "type": "split",
+    "children": [
+      {
+        "id": "d7c24483729d07f0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "38d695998ccf585a",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8d5fb3049a74a633",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c4a12d4bbc69c203",
+    "type": "split",
+    "children": [
+      {
+        "id": "9686b44c9e4eb9a3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6f0bc227d7287e85",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Commands/MSFvenom payload generation.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "9552042e7867964e",
+  "lastOpenFiles": [
+    "Commands/MSFvenom payload generation.md",
+    "General notes/Programming.md",
+    "Screenshots/win32api_ps.png",
+    "Screenshots/test.png",
+    "Code/Code exec with MS office/Code Execution in memory/Code execution with powershell.md",
+    "Code/Code exec with MS office/HTML smuggling code.md",
+    "Code/Code exec with MS office/Code Execution in memory/Win32 APIs using Powershell.md",
+    "Code/Code exec with MS office/Code Execution in memory/Using Powershell.md",
+    "Code/Code exec with MS office/Code Execution in memory/Calling win32 APIs.md",
+    "Untitled.md"
+  ]
+}

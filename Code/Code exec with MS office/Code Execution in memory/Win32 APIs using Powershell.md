@@ -1,0 +1,109 @@
+## An example
+We can use the power of .net framework to use C# in our Powershell session.
+This will enable us to declare/import Win32 APIs using the DLLImportAttribute class.
+
+We can begin by translating C data types to C# data types, using the [P/Invoke](https://www.pinvoke.net/)_ services by Microsoft.
+The P/Invoke APIs are stored in the [_System_](https://docs.microsoft.com/en-us/dotnet/api/system?view=netframework-4.8) and [_System.Runtime.InteropServices_](https://docs.microsoft.com/en-us/dotnet/api/system.runtime.interopservices?view=netframework-4.8)_ namespaces.
+These can be imported using the [_using_](https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/using-directive) directive keyword.
+
+We consider the use of MessageBox from User32.dll, the function prototype is as follows:
+```C
+int MessageBox(
+  HWND    hWnd,
+  LPCTSTR lpText,
+  LPCTSTR lpCaption,
+  UINT    uType
+);
+```
+
+First off, we declare check pinvoke to see how the function is [declared](https://www.pinvoke.net/default.aspx/user32.messagebox):
+```Powershell
+[DllImport("user32.dll", SetLastError = true, CharSet= CharSet.Auto)]
+public static extern int MessageBox(int hWnd, String text, String caption, uint type);
+```
+- This is not complete, to be able to use this in powershell, we need to import system and system.runtime.InteropServices namespaces containing the P/Invoke APIs
+
+The following code will do so for us:
+```Powershell
+using System;
+using System.Runtime.InteropServices;
+```
+- We also create a C# class (User32) to import MessageBox with DllImport.
+- This will allows us to interact with the windows API
+
+Now that we have a C# import and a P/Invoke translation, we need to invoke it from PowerShell with the [_Add-Type_](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/add-type?view=powershell-5.1) keyword.
+_Add-Type_ uses the .NET framework to compile the C# code containing Win32 API declarations.
+
+Our final code looks something like so:
+```Powershell
+$User32 = @"
+using System;
+using System.Runtime.InteropServices;
+
+public class User32 {
+    [DllImport("user32.dll", CharSet=CharSet.Auto)]
+    public static extern int MessageBox(IntPtr hWnd, String text, 
+        String caption, int options);
+}
+"@
+
+Add-Type $User32
+
+[User32]::MessageBox(0, "This is an alert", "MyBox", 0)
+```
+- The "@" keyword declares [_Here-Strings_](https://devblogs.microsoft.com/scripting/powertip-use-here-strings-with-powershell/) which are a simple way for us to declare blocks of text.
+- the code creates a _$User32_ variable and sets it to a block of text.
+
+Finally, to execute the API, we pass arguments to use the User32.NET object that we've created as so:
+```Powershell
+[User32]::MessageBox(0, "This is an alert", "MyBox", 0)
+```
+
+The final code looks like so:
+```Powershell
+$User32 = @"
+using System;
+using System.Runtime.InteropServices;
+
+public class User32 {
+    [DllImport("user32.dll", CharSet=CharSet.Auto)]
+    public static extern int MessageBox(IntPtr hWnd, String text, 
+        String caption, int options);
+}
+"@
+
+Add-Type $User32
+
+[User32]::MessageBox(0, "This is an alert", "MyBox", 0)
+```
+
+Running the code, we see a pop up box with our arguments:
+![win32api_ps](../../../Screenshots/win32api_ps.png)
+
+Code run in powershell_ise 32 bit:
+```PATH
+C:\Windows\SysWOW64\WindowsPowerShell\v1.0\powershell_ise.exe
+```
+
+## Exercise
+```Powershell
+$Mycode = @'
+
+using System;
+using System.Runtime.InteropServices;
+
+public class MyCode {
+
+    [DllImport("advapi32.dll", SetLastError = true)]
+    public static extern bool GetUserName(System.Text.StringBuilder sb, ref Int32 length);
+}
+'@
+
+Add-Type $Mycode
+
+$size = 64
+$str = New-Object System.Text.StringBuilder -ArgumentList $size
+
+
+[Mycode]::GetUserName($str, [ref]$size)
+```
