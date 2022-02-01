@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Commands/MSFvenom payload generation.md",
+            "file": "Code/Code exec with MS office/Code Execution in memory/Even more evasion.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Commands/MSFvenom payload generation.md",
+                "file": "Code/Code exec with MS office/Code Execution in memory/Even more evasion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "9552042e7867964e",
   "lastOpenFiles": [
+    "Code/Code exec with MS office/Code Execution in memory/Even more evasion.md",
+    "Code/Code exec with MS office/Code Execution in memory/Code execution with powershell.md",
+    "Code/Code exec with MS office/Code Execution in memory/Win32 APIs using Powershell.md",
+    "Code/Code exec with MS office/Code Execution in memory/Creating Our Shellcode.md",
+    "Code/Code exec with MS office/Code Execution in memory/Using Powershell.md",
     "Commands/MSFvenom payload generation.md",
+    "General notes/Windows Concept.md",
     "General notes/Programming.md",
     "Screenshots/win32api_ps.png",
-    "Screenshots/test.png",
-    "Code/Code exec with MS office/Code Execution in memory/Code execution with powershell.md",
-    "Code/Code exec with MS office/HTML smuggling code.md",
-    "Code/Code exec with MS office/Code Execution in memory/Win32 APIs using Powershell.md",
-    "Code/Code exec with MS office/Code Execution in memory/Using Powershell.md",
-    "Code/Code exec with MS office/Code Execution in memory/Calling win32 APIs.md",
-    "Untitled.md"
+    "Screenshots/test.png"
   ]
 }
