@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/Code exec with MS office/Code Execution in memory/Advanced powershell evasion/Even more evasion.md",
+            "file": "2. Topics/Code exec with MS office/Code Execution in memory/Advanced powershell evasion/Code execution with powershell.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 329
   },
   "right": {
     "id": "c4a12d4bbc69c203",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/Code exec with MS office/Code Execution in memory/Advanced powershell evasion/Even more evasion.md",
+                "file": "2. Topics/Code exec with MS office/Code Execution in memory/Advanced powershell evasion/Code execution with powershell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,11 +89,11 @@
   },
   "active": "9552042e7867964e",
   "lastOpenFiles": [
-    "2. Topics/Code exec with MS office/Code Execution in memory/Advanced powershell evasion/Even more evasion.md",
-    "previously.md",
     "2. Topics/Code exec with MS office/Code Execution in memory/Advanced powershell evasion/Code execution with powershell.md",
     "2. Topics/Code exec with MS office/Code Execution in memory/Advanced powershell evasion/Win32 APIs using Powershell.md",
     "2. Topics/Code exec with MS office/Code Execution in memory/Advanced powershell evasion/Using Powershell.md",
+    "2. Topics/Code exec with MS office/Code Execution in memory/Advanced powershell evasion/Even more evasion.md",
+    "previously.md",
     "2. Topics/Code exec with MS office/Code Execution in memory/Simple code execution/Microsoft Office Phishing.md",
     "2. Topics/Code exec with MS office/HTML smuggling code.md",
     "General notes/Untitled.md",
