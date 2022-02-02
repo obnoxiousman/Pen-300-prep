@@ -206,3 +206,195 @@ $MyAssemblyBuilder = $Domain.DefineDynamicAssembly($MyAssembly,
   [System.Reflection.Emit.AssemblyBuilderAccess]::Run)
 ```
 
+We can now start populating the assembly with content.
+
+We start by creating our main building block i.e. a Module. We will do this throught the [_DefineDynamicModule_](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.emit.assemblybuilder.definedynamicmodule?view=netframework-4.8) method.
+The method takes 2 arguments:
+1. A custom name
+2. Boolean(Wheather to include symbol information)
+
+```Powershell
+$MyModuleBuilder = $MyAssemblyBuilder.DefineDynamicModule('InMemoryModule', $false)
+```
+
+We will now use the [_DefineType_](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.emit.modulebuilder.definetype?view=netframework-4.8#System_Reflection_Emit_ModuleBuilder_DefineType_System_String_System_Reflection_TypeAttributes_) method to create a custom type.
+For this, we set 3 arguments:
+1. A custom name
+2. A combined list attributes for the type:
+			- Class (For the type to be a class)
+			- Public (For it to be accessible)
+			- Sealed (For it to be non-extendable)
+			- AnsiClass (For it to use ASCII instead of Unicode)
+			- AutoClass (For it to be interpreted automatically)
+3. The type it builds on top of
+
+We build our custom type as follows:
+```Powershell
+$MyTypeBuilder = $MyModuleBuilder.DefineType('MyDelegateType', 
+  'Class, Public, Sealed, AnsiClass, AutoClass', [System.MulticastDelegate])
+```
+(We use the System.MulticastDelegate to create a delegate with multiple entries)
+
+We can now proceed to put the function prototype inside the custom type and let it become our custom delegate!
+We do this by defining a constructor with the [_DefineConstructor_](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.emit.typebuilder.defineconstructor?view=netframework-4.8) method. which takes 3 arguments:
+1. Attributes for the constructor itself, defined with the [_MethodAttributes Enum_](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.methodattributes?view=netframework-4.8). We chose RTSpecialName, HideBySig and Public, for it to be referenced by both, by name and signature, and also make it public.
+2. Calling the convention for the constructor. This will define how the arguments and return values are handled by the .NET framework. We chose the fefault calling convention by \[System.Reflection.CallingConventions]::Standard enum value.
+3. Defining the data types of the constructor.
+
+The code looks as follows:
+```Powershell
+$MyConstructorBuilder = $MyTypeBuilder.DefineConstructor(
+  'RTSpecialName, HideBySig, Public', 
+    [System.Reflection.CallingConventions]::Standard, 
+      @([IntPtr], [String], [String], [int]))
+```
+
+Our constructor has been created, however, before calling it, we need to set a few implementation flags.
+We will use [_SetImplementationFlags_](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.emit.constructorbuilder.setimplementationflags?view=netframework-4.8) method for this.
+We will use the values _Runtime_ and _Managed_ since the code is used at runtime and is managed code.
+The code for above is as follows:
+```Powershell
+$MyConstructorBuilder.SetImplementationFlags('Runtime, Managed')
+```
+
+The function is ready to be called.
+However, we need to tell the .NET framework, the function prototype to be used in calling of the function.
+For this, we will define the Invoke method.
+
+We first use the [_DefineMethod_](https://docs.microsoft.com/en-us/dotnet/api/system.reflection.emit.typebuilder.definemethod?view=netframework-4.8) to create and specify the settings for the Invoke method.
+
+The method takes 4 arguments:
+1. The name of the method.
+2. The attributes for the method
+		- We choose Public, HideBySig,(discussed previously) NewSlot and Virtual, these 2, indicate that the method is virtual and ensure that always gets a new slot in the vtable.
+3. The return type of the function.
+4. The data types of the function
+
+The code is as follows:
+```Powershell
+$MyMethodBuilder = $MyTypeBuilder.DefineMethod('Invoke', 
+  'Public, HideBySig, NewSlot, Virtual', 
+    [int], 
+      @([IntPtr], [String], [String], [int]))
+```
+
+We need to set implementation flags for this as well like so:
+```Powershell
+$MyMethodBuilder.SetImplementationFlags('Runtime, Managed')
+```
+
+We can now finally call our custom constructor with the CreateType method:
+```Powershell
+$MyDelegateType = $MyTypeBuilder.CreateType()
+```
+
+Our final code looks something like so:
+```Powershell
+function LookupFunc {
+
+	Param ($moduleName, $functionName)
+
+	$assem = ([AppDomain]::CurrentDomain.GetAssemblies() | 
+    Where-Object { $_.GlobalAssemblyCache -And $_.Location.Split('\\')[-1].
+      Equals('System.dll') }).GetType('Microsoft.Win32.UnsafeNativeMethods')
+    $tmp=@()
+    $assem.GetMethods() | ForEach-Object {If($_.Name -eq "GetProcAddress") {$tmp+=$_}}
+	return $tmp[0].Invoke($null, @(($assem.GetMethod('GetModuleHandle')).Invoke($null, @($moduleName)), $functionName))
+}
+
+$MessageBoxA = LookupFunc user32.dll MessageBoxA
+
+$MyAssembly = New-Object System.Reflection.AssemblyName('ReflectedDelegate')
+
+$Domain = [AppDomain]::CurrentDomain
+
+$MyAssemblyBuilder = $Domain.DefineDynamicAssembly($MyAssembly, 
+  [System.Reflection.Emit.AssemblyBuilderAccess]::Run)
+
+$MyModuleBuilder = $MyAssemblyBuilder.DefineDynamicModule('InMemoryModule', $false)
+
+$MyTypeBuilder = $MyModuleBuilder.DefineType('MyDelegateType', 
+  'Class, Public, Sealed, AnsiClass, AutoClass', [System.MulticastDelegate])
+
+
+$MyConstructorBuilder = $MyTypeBuilder.DefineConstructor(
+  'RTSpecialName, HideBySig, Public', 
+    [System.Reflection.CallingConventions]::Standard, 
+      @([IntPtr], [String], [String], [int]))
+$MyConstructorBuilder.SetImplementationFlags('Runtime, Managed')
+
+$MyMethodBuilder = $MyTypeBuilder.DefineMethod('Invoke', 
+  'Public, HideBySig, NewSlot, Virtual', 
+    [int], 
+      @([IntPtr], [String], [String], [int]))
+$MyMethodBuilder.SetImplementationFlags('Runtime, Managed')
+
+$MyDelegateType = $MyTypeBuilder.CreateType()
+
+$MyFunction = [System.Runtime.InteropServices.Marshal]::
+    GetDelegateForFunctionPointer($MessageBoxA, $MyDelegateType)
+
+$MyFunction.Invoke([IntPtr]::Zero,"Hello World","This is My MessageBox",0)
+```
+
+## Exercise
+We need to open a notepad using WinExec Win32 API by editing our built code.
+To do this we follow these steps:
+1. We first change our $MessageBoxA variable name to $WinExec for conventional look.
+2. We then change the arguments to Kernel32.dll as the module name and WinExec as the function name.
+3. We then proceed to change the arguments of the DefineConstructor method of the $MyConstructorBuilder variable.
+			- We change the arguments from 4 to 2, which are String and int.
+4. We then change the arguments of the DefineMethod method of the $MyMethodBuilder vairable.
+		- We inculcate the same change as in step 3
+5. Finally, we change the arguments in the final call of the function to:
+			- The path of the notepad executable
+			- The integer "1" to open a [window](https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-showwindow#parameters) 
+
+The final code looks something like so:
+```Powershell
+function LookupFunc {
+
+        Param ($moduleName, $functionName)
+
+        $assem = ([AppDomain]::CurrentDomain.GetAssemblies() | 
+    Where-Object { $_.GlobalAssemblyCache -And $_.Location.Split('\\')[-1].
+      Equals('System.dll') }).GetType('Microsoft.Win32.UnsafeNativeMethods')
+    $tmp=@()
+    $assem.GetMethods() | ForEach-Object {If($_.Name -eq "GetProcAddress") {$tmp+=$_}}
+        return $tmp[0].Invoke($null, @(($assem.GetMethod('GetModuleHandle')).Invoke($null, @($moduleName)), $functionName))
+}
+
+$WinExec = LookupFunc Kernel32.dll WinExec
+
+$MyAssembly = New-Object System.Reflection.AssemblyName('ReflectedDelegate')
+
+$Domain = [AppDomain]::CurrentDomain
+
+$MyAssemblyBuilder = $Domain.DefineDynamicAssembly($MyAssembly, 
+  [System.Reflection.Emit.AssemblyBuilderAccess]::Run)
+
+$MyModuleBuilder = $MyAssemblyBuilder.DefineDynamicModule('InMemoryModule', $false)
+
+$MyTypeBuilder = $MyModuleBuilder.DefineType('MyDelegateType', 
+  'Class, Public, Sealed, AnsiClass, AutoClass', [System.MulticastDelegate])
+
+$MyConstructorBuilder = $MyTypeBuilder.DefineConstructor(
+  'RTSpecialName, HideBySig, Public', 
+    [System.Reflection.CallingConventions]::Standard, 
+      @([String], [int]))
+$MyConstructorBuilder.SetImplementationFlags('Runtime, Managed')
+
+$MyMethodBuilder = $MyTypeBuilder.DefineMethod('Invoke', 
+  'Public, HideBySig, NewSlot, Virtual', 
+    [int], 
+      @([String], [int]))
+$MyMethodBuilder.SetImplementationFlags('Runtime, Managed')
+
+$MyDelegateType = $MyTypeBuilder.CreateType()
+
+
+$MyFunction = [System.Runtime.InteropServices.Marshal]::
+    GetDelegateForFunctionPointer($WinExec, $MyDelegateType)
+
+$MyFunction.Invoke('C:\Windows\System32\Notepad.exe', 1)
+```
