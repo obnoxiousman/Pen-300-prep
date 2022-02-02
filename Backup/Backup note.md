@@ -11,7 +11,7 @@ Our last shellcode in memory executed 3 primary steps:
 - Located the function
 - Specified Argument data types from C to C# to powershell
 - Invoke the function
-
+ 
 There are 2 ways to locate functions in unmaged DLLs:
 1. The Add-type function we used previously
 2. Dynamic Link Lookup
