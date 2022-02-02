@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/04.Some more evasion.md",
+            "file": "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02. Complete In-Memory execution/01. Locating Functions.md",
             "mode": "source",
             "source": false
           }
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329
+    "width": 345
   },
   "right": {
     "id": "c4a12d4bbc69c203",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/04.Some more evasion.md",
+                "file": "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02. Complete In-Memory execution/01. Locating Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,14 +89,15 @@
   },
   "active": "9552042e7867964e",
   "lastOpenFiles": [
-    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/04.Some more evasion.md",
-    "Backup/Backup note.md",
+    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02. Complete In-Memory execution/01. Locating Functions.md",
+    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02. Complete In-Memory execution/02. Defining arguments.md",
+    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02. Complete In-Memory execution/03. Putting it Together.md",
+    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/Complete In-Memory Shell.md",
+    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/01. In Memory shellcode/03. Code execution with powershell.md",
     "2. Topics/Code exec with MS office/HTML smuggling code.md",
-    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/03.Code execution with powershell.md",
-    "2. Topics/Code exec with MS office/Code Execution in memory/02.Document memory/Calling win32 APIs.md",
-    "2. Topics/Code exec with MS office/Code Execution in memory/01.Simple code execution/Microsoft Office Phishing.md",
-    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02.Win32 APIs using Powershell.md",
-    "Screenshots/win32api_ps.png",
-    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/01.Using Powershell.md"
+    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/01. In Memory shellcode/02. Win32 APIs using Powershell.md",
+    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/01. In Memory shellcode/01. Using Powershell.md",
+    "Backup/Backup note.md",
+    "2. Topics/Code exec with MS office/Code Execution in memory/02.Document memory/Calling win32 APIs.md"
   ]
 }
