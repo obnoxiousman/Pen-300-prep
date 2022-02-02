@@ -78,7 +78,7 @@ Add-Type $User32
 ```
 
 Running the code, we see a pop up box with our arguments:
-![win32api_ps](../../../Screenshots/win32api_ps.png)
+![win32api_ps](../../../../Screenshots/win32api_ps.png)
 
 Code run in powershell_ise 32 bit:
 ```PATH

@@ -1,6 +1,6 @@
 ## Building our Shellcode
 
-We can now start building our shellcode same as before in the section [Creating Our Shellcode](Creating%20Our%20Shellcode.md), we use 3 Win32 APIs that are:
+We can now start building our shellcode same as before in the section [Creating Our Shellcode](../Document%20memory/Creating%20Our%20Shellcode.md), we use 3 Win32 APIs that are:
 - VirtualAlloc
 - RtlMoveMemory(In powershell we'll use copy method in _System.Runtime.InteropServices.Marshal_ namespace)
 - CreateThread
@@ -42,7 +42,7 @@ $size = $buf.Length
 
 $thandle=[Kernel32]::CreateThread(0,0,$addr,0,0,0);
 ```
-The arguments have already been explained in the [Creating Our Shellcode](Creating%20Our%20Shellcode.md) section.
+The arguments have already been explained in the [Creating Our Shellcode](../Document%20memory/Creating%20Our%20Shellcode.md) section.
 
 Our final code will look something like so:
 ```Powershell
@@ -132,4 +132,4 @@ $thandle=[Kernel32]::CreateThread(0,0,$addr,0,0,0);
 ```
 
 With this, we have successfully created a shellcode in memory using Powershell:
-![ps-in-mem-proof](../../../Screenshots/ps-in-mem-proof.png)
+![ps-in-mem-proof](../../../../Screenshots/ps-in-mem-proof.png)
