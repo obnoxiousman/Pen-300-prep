@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02. Complete In-Memory execution/03. Putting it Together.md",
+            "file": "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/Complete In-Memory Shell.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02. Complete In-Memory execution/03. Putting it Together.md",
+                "file": "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/Complete In-Memory Shell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,9 +89,9 @@
   },
   "active": "9552042e7867964e",
   "lastOpenFiles": [
-    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02. Complete In-Memory execution/03. Putting it Together.md",
     "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/Complete In-Memory Shell.md",
     "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02. Complete In-Memory execution/02. Defining arguments.md",
+    "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02. Complete In-Memory execution/03. Putting it Together.md",
     "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/02. Complete In-Memory execution/01. Locating Functions.md",
     "2. Topics/Code exec with MS office/Code Execution in memory/03.Advanced powershell evasion/01. In Memory shellcode/03. Code execution with powershell.md",
     "2. Topics/Code exec with MS office/HTML smuggling code.md",
