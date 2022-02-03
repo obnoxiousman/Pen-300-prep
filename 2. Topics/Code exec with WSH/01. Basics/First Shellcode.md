@@ -88,7 +88,7 @@ var r = new ActiveXObject("WScript.Shell").Run("myshell.exe");
 ```
 
 We get a shell back:
-![jscript-drop-shell](../../Screenshots/jscript-drop-shell.png)
+![jscript-drop-shell](../../../Screenshots/jscript-drop-shell.png)
 
 ## Exercise
 We need to make the communication proxy-aware, we can do this with the [_setProxy_](https://docs.microsoft.com/en-us/previous-versions/windows/desktop/ms760236%28v%3dvs.85%29) method of the oSrvXMLHTTPRequest object.
