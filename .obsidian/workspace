@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/Code exec with MS office/03. Advanced powershell evasion/Complete In-Memory Shell.md",
+            "file": "2. Topics/Code exec with WSH/First Shellcode.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/Code exec with MS office/03. Advanced powershell evasion/Complete In-Memory Shell.md",
+                "file": "2. Topics/Code exec with WSH/First Shellcode.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,8 @@
   },
   "active": "9552042e7867964e",
   "lastOpenFiles": [
+    "2. Topics/Code exec with WSH/First Shellcode.md",
+    "2. Topics/Code exec with WSH/The Concept.md",
     "2. Topics/Code exec with MS office/03. Advanced powershell evasion/Complete In-Memory Shell.md",
     "2. Topics/Code exec with MS office/04. Proxy/Proxy-Aware Communication.md",
     "2. Topics/Code exec with MS office/04. Proxy/SYSTEM Proxy.md",
@@ -96,8 +98,6 @@
     "2. Topics/Code exec with MS office/Code Execution in memory/Proxy/Untitled.md",
     "2. Topics/Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/03. Putting it Together.md",
     "Screenshots/win32api_ps.png",
-    "Screenshots/rev_shell_ps_memory.png",
-    "Screenshots/ps-in-mem-proof.png",
-    "Screenshots/ps_unsafe_res.png"
+    "Screenshots/rev_shell_ps_memory.png"
   ]
 }
