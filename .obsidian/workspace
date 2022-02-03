@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/02. Defining arguments.md",
+            "file": "2. Topics/Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/01. Locating Functions.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/02. Defining arguments.md",
+                "file": "2. Topics/Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/01. Locating Functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "9552042e7867964e",
   "lastOpenFiles": [
+    "2. Topics/Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/01. Locating Functions.md",
     "2. Topics/Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/02. Defining arguments.md",
+    "2. Topics/Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/03. Putting it Together.md",
+    "2. Topics/Code exec with WSH/02. JScript to C/Visual Studio.md",
+    "Screenshots/ps-search-unsafe-systemdll.png",
     "2. Topics/Code exec with MS office/02.Document memory/Calling win32 APIs.md",
     "2. Topics/Code exec with MS office/01.Simple code execution/Microsoft Office Phishing.md",
-    "2. Topics/Code exec with WSH/02. JScript to C/Visual Studio.md",
     "2. Topics/Code exec with WSH/01. Basics/First Shellcode.md",
     "2. Topics/Code exec with WSH/01. Basics/The Concept.md",
-    "2. Topics/Code exec with MS office/03. Advanced powershell evasion/Complete In-Memory Shell.md",
-    "2. Topics/Code exec with MS office/04. Proxy/Proxy-Aware Communication.md",
-    "2. Topics/Code exec with MS office/04. Proxy/SYSTEM Proxy.md",
-    "2. Topics/Code exec with MS office/Code Execution in memory/Proxy/Untitled.md"
+    "2. Topics/Code exec with MS office/03. Advanced powershell evasion/Complete In-Memory Shell.md"
   ]
 }
