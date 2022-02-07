@@ -1,4 +1,4 @@
-
+## Basics
 - All programming languages are either _compiled_ or _interpreted_.
 - Low-level programming languages are difficult for humans to understand, and are specifically tied to the hardware and contain a limited amount of features.
 - high-level languages are easier for programmers to read and write, are more portable and provide access to greater complexity through the paradigm of _object-oriented programming_.
