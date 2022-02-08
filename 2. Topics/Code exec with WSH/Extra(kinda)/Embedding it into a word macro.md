@@ -24,4 +24,5 @@ End Sub
 ```
 
 Running the script, we get a shell:
+
 ![dn-macro](../../../Screenshots/dn-macro.png)
