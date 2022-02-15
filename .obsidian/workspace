@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/04. AV Evasion/04. Evasion with VBA/2. Modern MS Office.md",
+            "file": "2. Topics/04. AV Evasion/05. Powershell in VBA/3. low-detection code.md",
             "mode": "preview",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/04. AV Evasion/04. Evasion with VBA/2. Modern MS Office.md",
+                "file": "2. Topics/04. AV Evasion/05. Powershell in VBA/3. low-detection code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "115c23d7b7031806",
   "lastOpenFiles": [
-    "2. Topics/04. AV Evasion/04. Evasion with VBA/2. Modern MS Office.md",
-    "2. Topics/04. AV Evasion/04. Evasion with VBA/1. Ceaser cypher.md",
-    "2. Topics/04. AV Evasion/03. Behavioral evasion/2. Non-Emulated APIs.md",
-    "2. Topics/04. AV Evasion/02.Evasion with CSharp/2. Encrypting our shellcode.md",
-    "2. Topics/04. AV Evasion/03. Behavioral evasion/1. Take a nap(not).md",
-    "2. Topics/04. AV Evasion/02.Evasion with CSharp/1. Shellcode.md",
-    "3. Shellcode/Ceaser cypher.md",
+    "2. Topics/04. AV Evasion/05. Powershell in VBA/3. low-detection code.md",
+    "2. Topics/04. AV Evasion/05. Powershell in VBA/1. Using WMI.md",
+    "2. Topics/04. AV Evasion/05. Powershell in VBA/2. Obfuscation FTW.md",
     "3. Shellcode/64 bit csharp.md",
     "3. Shellcode/32 bit csharp.md",
-    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/3. Putting it Together.md"
+    "2. Topics/04. AV Evasion/04. Evasion with VBA/2. Modern MS Office.md",
+    "2. Topics/04. AV Evasion/04. Evasion with VBA/1. Ceaser cypher.md",
+    "3. Shellcode/vbaCeaserEnc.md",
+    "2. Topics/01. Code exec with MS office/02.Document memory/2. Creating Our Shellcode.md",
+    "2. Topics/01. Code exec with MS office/01.Simple code execution/Microsoft Office Phishing.md"
   ]
 }
