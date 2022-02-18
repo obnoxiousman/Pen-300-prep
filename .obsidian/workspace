@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/04. AV Evasion/05. Powershell in VBA/3. low-detection code.md",
-            "mode": "preview",
+            "file": "2. Topics/05. Advanced Evasion/02. AMSI Intro/Powershell Reflection.md",
+            "mode": "source",
             "source": false
           }
         }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/04. AV Evasion/05. Powershell in VBA/3. low-detection code.md",
+                "file": "2. Topics/05. Advanced Evasion/02. AMSI Intro/Powershell Reflection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "115c23d7b7031806",
   "lastOpenFiles": [
-    "2. Topics/04. AV Evasion/05. Powershell in VBA/3. low-detection code.md",
-    "2. Topics/04. AV Evasion/05. Powershell in VBA/1. Using WMI.md",
-    "2. Topics/04. AV Evasion/05. Powershell in VBA/2. Obfuscation FTW.md",
-    "3. Shellcode/64 bit csharp.md",
-    "3. Shellcode/32 bit csharp.md",
-    "2. Topics/04. AV Evasion/04. Evasion with VBA/2. Modern MS Office.md",
-    "2. Topics/04. AV Evasion/04. Evasion with VBA/1. Ceaser cypher.md",
-    "3. Shellcode/vbaCeaserEnc.md",
+    "2. Topics/05. Advanced Evasion/02. AMSI Intro/Powershell Reflection.md",
+    "2. Topics/01. Code exec with MS office/01.Simple code execution/Microsoft Office Phishing.md",
+    "2. Topics/01. Code exec with MS office/02.Document memory/1. Calling win32 APIs.md",
     "2. Topics/01. Code exec with MS office/02.Document memory/2. Creating Our Shellcode.md",
-    "2. Topics/01. Code exec with MS office/01.Simple code execution/Microsoft Office Phishing.md"
+    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/01. In Memory shellcode/1. Using Powershell.md",
+    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/01. In Memory shellcode/2. Win32 APIs using Powershell.md",
+    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/01. In Memory shellcode/3. Code execution with powershell.md",
+    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/Complete In-Memory Shell.md",
+    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/3. Putting it Together.md",
+    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/2. Defining arguments.md"
   ]
 }
