@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/05. Advanced Evasion/02. AMSI Intro/Powershell Reflection.md",
+            "file": "2. Topics/06. Application Whitelisting/02. Powershell Bypass/4. DLL Process Injection.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/05. Advanced Evasion/02. AMSI Intro/Powershell Reflection.md",
+                "file": "2. Topics/06. Application Whitelisting/02. Powershell Bypass/4. DLL Process Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "115c23d7b7031806",
   "lastOpenFiles": [
-    "2. Topics/05. Advanced Evasion/02. AMSI Intro/Powershell Reflection.md",
-    "2. Topics/01. Code exec with MS office/01.Simple code execution/Microsoft Office Phishing.md",
-    "2. Topics/01. Code exec with MS office/02.Document memory/1. Calling win32 APIs.md",
-    "2. Topics/01. Code exec with MS office/02.Document memory/2. Creating Our Shellcode.md",
-    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/01. In Memory shellcode/1. Using Powershell.md",
-    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/01. In Memory shellcode/2. Win32 APIs using Powershell.md",
-    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/01. In Memory shellcode/3. Code execution with powershell.md",
-    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/Complete In-Memory Shell.md",
-    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/3. Putting it Together.md",
-    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/02. Complete In-Memory execution/2. Defining arguments.md"
+    "2. Topics/06. Application Whitelisting/02. Powershell Bypass/4. DLL Process Injection.md",
+    "2. Topics/06. Application Whitelisting/02. Powershell Bypass/3. CLM Bypass.md",
+    "2. Topics/06. Application Whitelisting/02. Powershell Bypass/2. Runspaces.md",
+    "3. Shellcode/64 bit csharp.md",
+    "2. Topics/06. Application Whitelisting/02. Powershell Bypass/1. Language Mode.md",
+    "2. Topics/06. Application Whitelisting/02..md",
+    "2. Topics/06. Application Whitelisting/01. Introduction/4. Data Streams.md",
+    "2. Topics/06. Application Whitelisting/01. Introduction/3. DLL Bypass.md",
+    "Screenshots/dlle-b.png",
+    "Screenshots/dllal-e.png"
   ]
 }
