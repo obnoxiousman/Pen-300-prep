@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/06. Application Whitelisting/02. Powershell Bypass/4. DLL Process Injection.md",
+            "file": "2. Topics/07. Network Filter Evasion/02. Domain Fronting/2. The Practical.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/06. Application Whitelisting/02. Powershell Bypass/4. DLL Process Injection.md",
+                "file": "2. Topics/07. Network Filter Evasion/02. Domain Fronting/2. The Practical.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "115c23d7b7031806",
   "lastOpenFiles": [
-    "2. Topics/06. Application Whitelisting/02. Powershell Bypass/4. DLL Process Injection.md",
-    "2. Topics/06. Application Whitelisting/02. Powershell Bypass/3. CLM Bypass.md",
-    "2. Topics/06. Application Whitelisting/02. Powershell Bypass/2. Runspaces.md",
-    "3. Shellcode/64 bit csharp.md",
-    "2. Topics/06. Application Whitelisting/02. Powershell Bypass/1. Language Mode.md",
-    "2. Topics/06. Application Whitelisting/02..md",
-    "2. Topics/06. Application Whitelisting/01. Introduction/4. Data Streams.md",
-    "2. Topics/06. Application Whitelisting/01. Introduction/3. DLL Bypass.md",
-    "Screenshots/dlle-b.png",
-    "Screenshots/dllal-e.png"
+    "2. Topics/07. Network Filter Evasion/02. Domain Fronting/2. The Practical.md",
+    "2. Topics/04. AV Evasion/03. Behavioral evasion/2. Non-Emulated APIs.md",
+    "2. Topics/04. AV Evasion/03. Behavioral evasion/1. Take a nap(not).md",
+    "2. Topics/04. AV Evasion/04. Evasion with VBA/2. Modern MS Office.md",
+    "2. Topics/04. AV Evasion/04. Evasion with VBA/1. Ceaser cypher.md",
+    "2. Topics/04. AV Evasion/02.Evasion with CSharp/2. Encrypting our shellcode.md",
+    "3. Shellcode/Ceaser cypher.md",
+    "2. Topics/04. AV Evasion/02.Evasion with CSharp/1. Shellcode.md",
+    "2. Topics/05. Advanced Evasion/01. Assembly Intro/2. WinDbg Intro.md",
+    "2. Topics/05. Advanced Evasion/01. Assembly Intro/1. Introducing assembly.md"
   ]
 }
