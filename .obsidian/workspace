@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/07. Network Filter Evasion/02. Domain Fronting/2. The Practical.md",
+            "file": "2. Topics/09. Windows Credentials/02. Access Tokens/1. The Theory.md",
             "mode": "source",
             "source": false
           }
@@ -69,13 +69,13 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/07. Network Filter Evasion/02. Domain Fronting/2. The Practical.md",
+                "file": "2. Topics/09. Windows Credentials/02. Access Tokens/1. The Theory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
-                "backlinkCollapsed": false,
+                "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
               }
             }
@@ -89,15 +89,15 @@
   },
   "active": "115c23d7b7031806",
   "lastOpenFiles": [
-    "2. Topics/07. Network Filter Evasion/02. Domain Fronting/2. The Practical.md",
-    "2. Topics/04. AV Evasion/03. Behavioral evasion/2. Non-Emulated APIs.md",
-    "2. Topics/04. AV Evasion/03. Behavioral evasion/1. Take a nap(not).md",
-    "2. Topics/04. AV Evasion/04. Evasion with VBA/2. Modern MS Office.md",
-    "2. Topics/04. AV Evasion/04. Evasion with VBA/1. Ceaser cypher.md",
-    "2. Topics/04. AV Evasion/02.Evasion with CSharp/2. Encrypting our shellcode.md",
-    "3. Shellcode/Ceaser cypher.md",
-    "2. Topics/04. AV Evasion/02.Evasion with CSharp/1. Shellcode.md",
-    "2. Topics/05. Advanced Evasion/01. Assembly Intro/2. WinDbg Intro.md",
-    "2. Topics/05. Advanced Evasion/01. Assembly Intro/1. Introducing assembly.md"
+    "2. Topics/09. Windows Credentials/02. Access Tokens/1. The Theory.md",
+    "2. Topics/09. Windows Credentials/01. Local Credentials/2. GPP, AES & LAPS.md",
+    "2. Topics/09. Windows Credentials/01. Local Credentials/1. SAM database.md",
+    "().md",
+    "1. General notes/Windows Concept.md",
+    "2. Topics/08. Linux Post-Exp/03. Shared Libraries/3. Exploitation via LD_PRELOAD.md",
+    "2. Topics/08. Linux Post-Exp/03. Shared Libraries/2. First Library Hijack.md",
+    "2. Topics/08. Linux Post-Exp/02. AV Evasion/3. Enhancing shellcode.md",
+    "2. Topics/08. Linux Post-Exp/02. AV Evasion/2. C Wrapper Program.md",
+    "2. Topics/08. Linux Post-Exp/02. AV Evasion/1. Kaspersky.md"
   ]
 }
