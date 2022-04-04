@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/13. Active Directory/03. Forests/3. Exploitation.md",
+            "file": "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/Complete In-Memory Shell.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/13. Active Directory/03. Forests/3. Exploitation.md",
+                "file": "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/Complete In-Memory Shell.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,6 +89,7 @@
   },
   "active": "cd1067b7641185bf",
   "lastOpenFiles": [
+    "2. Topics/01. Code exec with MS office/03. Advanced powershell evasion/Complete In-Memory Shell.md",
     "2. Topics/13. Active Directory/03. Forests/3. Exploitation.md",
     "2. Topics/13. Active Directory/03. Forests/2. Enumeration.md",
     "2. Topics/13. Active Directory/02. Delegation/1. Unconstrained Delegation.md",
@@ -97,7 +98,6 @@
     "2. Topics/13. Active Directory/02. Delegation/2. Constrained Delegation.md",
     "2. Topics/13. Active Directory/03. Forests/1. Introduction.md",
     "3. Shellcode/CXorEnc.md",
-    "3. Shellcode/vbaCeaserEnc.md",
-    "3. Shellcode/vba shellcode.md"
+    "3. Shellcode/vbaCeaserEnc.md"
   ]
 }
