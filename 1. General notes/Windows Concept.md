@@ -23,3 +23,28 @@ S-R-I-S
 
 ## SYSTEM file
 - The SAM file is partially encrypted by either RC4 (Windows 10 prior to Anniversary edition also called 1607 or RS1) or AES[12](https://portal.offensive-security.com/courses/pen-300/books-and-videos/modal/modules/windows-credentials/local-windows-credentials/sam-database#fn12) (Anniversary edition and newer). The encryption keys are stored in the _SYSTEM_ file, which is in the same folder as the SAM database.
+
+## Windows Pipes
+- Pipes are a means of _interprocess communication_ (IPC), just like RPC, COM, or even network sockets.
+- A pipe is a section of shared memory inside the kernel that processes can use for communication.
+- One process can create a pipe (the pipe server) while other processes can connect to the pipe (pipe clients) and read/write information from/to it, depending on the configured access rights for a given pipe.
+- _Anonymous_ pipes are typically used for communication between parent and child processes
+- _named_ pipes are more broadly used and have more functionality and more importantly, they support impersonation.
+
+## WDigest
+The [_wdigest_](https://stealthbits.com/blog/wdigest-clear-text-passwords-stealing-more-than-a-hash/) authentication protocol requires a clear text password, but it is disabled in Windows 8.1 and newer. We can enable it by creating the _UseLogonCredential_ registry value in the path 
+```path
+HKLM\SYSTEM\CurrentControlSet\Control\SecurityProviders\WDigest
+```
+Once we set this value to "1", the clear text password will be cached in LSASS after subsequent logins.
+
+## MSSQL
+A SMB share is typically supplied with a _Universal Naming Convention_ (UNC) path, which has the following format.
+```path
+\\hostname\folder\file
+```
+
+## Net-NTLM hash
+ Windows user account passwords are stored locally as NTLM hashes. 
+ When authentication with the NTLM protocol takes place over the network, a challenge and response is created based on the NTLM hash. 
+ The resulting hash is called Net-NTLM and it represents the same clear text password as the NTLM hash.

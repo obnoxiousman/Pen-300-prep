@@ -4,12 +4,12 @@
     "type": "split",
     "children": [
       {
-        "id": "115c23d7b7031806",
+        "id": "cd1067b7641185bf",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/09. Windows Credentials/02. Access Tokens/1. The Theory.md",
+            "file": "2. Topics/13. Active Directory/03. Forests/3. Exploitation.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/09. Windows Credentials/02. Access Tokens/1. The Theory.md",
+                "file": "2. Topics/13. Active Directory/03. Forests/3. Exploitation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -87,17 +87,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "115c23d7b7031806",
+  "active": "cd1067b7641185bf",
   "lastOpenFiles": [
-    "2. Topics/09. Windows Credentials/02. Access Tokens/1. The Theory.md",
-    "2. Topics/09. Windows Credentials/01. Local Credentials/2. GPP, AES & LAPS.md",
-    "2. Topics/09. Windows Credentials/01. Local Credentials/1. SAM database.md",
-    "().md",
-    "1. General notes/Windows Concept.md",
-    "2. Topics/08. Linux Post-Exp/03. Shared Libraries/3. Exploitation via LD_PRELOAD.md",
-    "2. Topics/08. Linux Post-Exp/03. Shared Libraries/2. First Library Hijack.md",
-    "2. Topics/08. Linux Post-Exp/02. AV Evasion/3. Enhancing shellcode.md",
-    "2. Topics/08. Linux Post-Exp/02. AV Evasion/2. C Wrapper Program.md",
-    "2. Topics/08. Linux Post-Exp/02. AV Evasion/1. Kaspersky.md"
+    "2. Topics/13. Active Directory/03. Forests/3. Exploitation.md",
+    "2. Topics/13. Active Directory/03. Forests/2. Enumeration.md",
+    "2. Topics/13. Active Directory/02. Delegation/1. Unconstrained Delegation.md",
+    "2. Topics/13. Active Directory/02. Delegation/3. Windows 2012.md",
+    "4. Handy Commands/1. AD Exploitation.md",
+    "2. Topics/13. Active Directory/02. Delegation/2. Constrained Delegation.md",
+    "2. Topics/13. Active Directory/03. Forests/1. Introduction.md",
+    "3. Shellcode/CXorEnc.md",
+    "3. Shellcode/vbaCeaserEnc.md",
+    "3. Shellcode/vba shellcode.md"
   ]
 }
