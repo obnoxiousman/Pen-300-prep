@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "4. Handy Commands/1. AD Exploitation.md",
+            "file": "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path injection.md",
             "mode": "source",
             "source": false
           }
@@ -41,7 +41,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "4. Handy Commands/1. AD Exploitation.md",
+                "file": "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "cd1067b7641185bf",
   "lastOpenFiles": [
-    "4. Handy Commands/1. AD Exploitation.md",
+    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path injection.md",
+    "Screenshots/cac-csc.png",
+    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path Injection.md",
+    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/2. Authentication.md",
+    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/1. Enumeration.md",
+    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/UNC Path Injection.md",
+    "UNC Path Injection.md",
     "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path Injection.md",
     "2. Topics/12. MSSQL Attacks/03. Linked Servers/1. Exploitation.md",
-    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/2. Authentication.md",
-    "2. Topics/12. MSSQL Attacks/02. Privesc/1. MSSQL Privesc.md",
-    "2. Topics/12. MSSQL Attacks/02. Privesc/2. Code Exec.md",
-    "2. Topics/12. MSSQL Attacks/02. Privesc/3. Custom Assemblies.md",
-    "2. Topics/13. Active Directory/04. Cross Forests/3. Linked SQL Servers.md",
-    "2. Topics/13. Active Directory/04. Cross Forests/2. Exploitation.md",
-    "2. Topics/13. Active Directory/04. Cross Forests/1. Enumeration.md"
+    "4. Handy Commands/3. SQL injection.md"
   ]
 }
