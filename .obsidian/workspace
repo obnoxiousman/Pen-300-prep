@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path injection.md",
+            "file": "1. General notes/HTML Smuggler.md",
             "mode": "source",
             "source": false
           }
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path injection.md",
+                "file": "1. General notes/HTML Smuggler.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "cd1067b7641185bf",
   "lastOpenFiles": [
+    "1. General notes/HTML Smuggler.md",
+    "2. Topics/06. Application Whitelisting/02. Powershell Bypass/3. CLM Bypass.md",
+    "2. Topics/06. Application Whitelisting/02. Powershell Bypass/4. DLL Process Injection.md",
     "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path injection.md",
     "Screenshots/cac-csc.png",
     "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path Injection.md",
     "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/2. Authentication.md",
     "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/1. Enumeration.md",
     "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/UNC Path Injection.md",
-    "UNC Path Injection.md",
-    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path Injection.md",
-    "2. Topics/12. MSSQL Attacks/03. Linked Servers/1. Exploitation.md",
-    "4. Handy Commands/3. SQL injection.md"
+    "UNC Path Injection.md"
   ]
 }
