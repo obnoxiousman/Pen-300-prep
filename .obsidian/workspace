@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "1. General notes/HTML Smuggler.md",
+            "file": "4. Handy Commands/4. File Downloads.md",
             "mode": "source",
             "source": false
           }
@@ -40,7 +40,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "load method",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -53,7 +53,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315
+    "width": 314
   },
   "right": {
     "id": "c4a12d4bbc69c203",
@@ -69,7 +69,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. General notes/HTML Smuggler.md",
+                "file": "4. Handy Commands/4. File Downloads.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -89,15 +89,15 @@
   },
   "active": "cd1067b7641185bf",
   "lastOpenFiles": [
-    "1. General notes/HTML Smuggler.md",
+    "4. Handy Commands/4. File Downloads.md",
+    "4. Handy Commands/5. AV disables.md",
     "2. Topics/06. Application Whitelisting/02. Powershell Bypass/3. CLM Bypass.md",
-    "2. Topics/06. Application Whitelisting/02. Powershell Bypass/4. DLL Process Injection.md",
-    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path injection.md",
-    "Screenshots/cac-csc.png",
-    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/3. UNC Path Injection.md",
-    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/2. Authentication.md",
-    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/1. Enumeration.md",
-    "2. Topics/12. MSSQL Attacks/01. MSSQL in AD/UNC Path Injection.md",
-    "UNC Path Injection.md"
+    "2. Topics/04. AV Evasion/05. Powershell in VBA/2. Obfuscation FTW.md",
+    "4. Handy Commands/3. SQL exploitation.md",
+    "2. Topics/13. Active Directory/02. Delegation/2. Constrained Delegation.md",
+    "4. Handy Commands/1. AD Exploitation.md",
+    "4. Handy Commands/2. Installing Python.md",
+    "2. Topics/02. Code exec with WSH/Extra(kinda)/1. Reflective Load.md",
+    "2. Topics/02. Code exec with WSH/Extra(kinda)/2. Embedding it into a word macro.md"
   ]
 }
